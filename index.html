@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Prueba Técnica Talenta365</title>
+</head>
+<script src="app.js" type="text/javascript"></script>
+<script src="films.js" type="text/javascript"></script>
+<script type="text/javascript">
+    runAPI((err, res) => {
+        if(res && !err){
+            console.log(res);
+            return res;
+        } else {
+            console.log('Error: ', err);
+            return false;
+        }
+    });
+</script>
+<body>
+    <h1>Star Wars API</h1>
+</body>
+</html>
